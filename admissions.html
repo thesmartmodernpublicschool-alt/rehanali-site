@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | The Smart Modern Public School</title>
+  <meta name="description" content="Admissions open at The Smart Modern Public School. Apply online for quality education. Simple admission process and form.">
+  <meta name="keywords" content="school admission, apply now, admission form, The Smart Modern Public School">
+  <meta name="author" content="The Smart Modern Public School">
+  <meta property="og:title" content="Admissions | The Smart Modern Public School">
+  <meta property="og:description" content="Admissions are open. Apply now for quality education.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-loader"><div class="loader-spinner"></div></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="The Smart Modern Public School Logo">
+          <div class="logo-text">The Smart Modern<span>Public School</span></div>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html" class="active">Admissions</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="teachers.html">Teachers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+          <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Admissions Open</h1>
+      <p>Begin your child's journey towards excellence with us</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Admissions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">How to Join</span>
+        <h2>Admission Process</h2>
+        <p>A simple and transparent process to welcome your child into our school family.</p>
+      </div>
+      <div class="admission-process">
+        <div class="process-step reveal">
+          <div class="step-num">1</div>
+          <h3>Submit Admission Form</h3>
+          <p>Fill out the online form below or collect a form from the school office.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">2</div>
+          <h3>Document Verification</h3>
+          <p>Submit required documents for verification by our admission team.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">3</div>
+          <h3>Admission Test / Interview</h3>
+          <p>Student may be required to take a short test or attend an interview.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">4</div>
+          <h3>Selection</h3>
+          <p>Successful candidates will be informed about selection and next steps.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">5</div>
+          <h3>Fee Submission</h3>
+          <p>Pay the admission and tuition fees as per the fee structure.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">6</div>
+          <h3>Confirmation</h3>
+          <p>Receive confirmation of admission and join our school family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Form -->
+  <section class="section" style="background: var(--gray-50); padding-top: 0;">
+    <div class="container">
+      <div class="admission-form-section reveal">
+        <div class="section-header" style="margin-bottom: 40px;">
+          <span class="subtitle">Online Application</span>
+          <h2>Apply Now</h2>
+          <p>Fill out the form below. Our team will contact you shortly after submission.</p>
+        </div>
+
+        <form id="admissionForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="studentName">Student Name <span class="required">*</span></label>
+              <input type="text" id="studentName" name="studentName" placeholder="Enter student's full name" required>
+              <span class="error-msg">Student name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="fatherName">Father's Name <span class="required">*</span></label>
+              <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required>
+              <span class="error-msg">Father's name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth <span class="required">*</span></label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="error-msg">Date of birth is required</span>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender <span class="required">*</span></label>
+              <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-msg">Please select gender</span>
+            </div>
+            <div class="form-group">
+              <label for="classApplying">Class Applying For <span class="required">*</span></label>
+              <select id="classApplying" name="classApplying" required>
+                <option value="">Select Class</option>
+                <option value="Playgroup">Playgroup</option>
+                <option value="Nursery">Nursery</option>
+                <option value="KG">KG</option>
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+                <option value="Class 4">Class 4</option>
+                <option value="Class 5">Class 5</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+              </select>
+              <span class="error-msg">Please select class</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Parent/Guardian Phone <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 0300-1234567" required>
+              <span class="error-msg">Phone number is required</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              <span class="error-msg">Email is required</span>
+            </div>
+            <div class="form-group">
+              <label for="previousSchool">Previous School (if any)</label>
+              <input type="text" id="previousSchool" name="previousSchool" placeholder="Name of previous school">
+            </div>
+            <div class="form-group full-width">
+              <label for="address">Address <span class="required">*</span></label>
+              <textarea id="address" name="address" placeholder="Enter complete address" required></textarea>
+              <span class="error-msg">Address is required</span>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Additional Message</label>
+              <textarea id="message" name="message" placeholder="Any additional information or questions..."></textarea>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 24px;">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="fas fa-paper-plane"></i> Submit Application
+            </button>
+          </div>
+        </form>
+
+        <div id="admissionSuccess" class="form-success">
+          <i class="fas fa-check-circle"></i>
+          <h3>Application Submitted Successfully!</h3>
+          <p>Thank you for applying to The Smart Modern Public School. Our admission team will contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Note -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="reveal" style="background: rgba(26, 86, 219, 0.08); border-radius: 12px; padding: 28px; border-left: 4px solid var(--primary);">
+        <h3 style="margin-bottom: 12px;"><i class="fas fa-info-circle" style="color: var(--primary);"></i> Important Note</h3>
+        <p style="color: var(--gray-600); margin: 0;">This is a static website form. Submissions are currently handled on the front-end only (validation + success message). To receive applications via email or store them in a database, you will need to connect this form to a backend service (e.g. Formspree, Netlify Forms, Google Forms, or a custom server). See the README.md for instructions.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">The Smart Modern<span>Public School</span></div>
+          <p>Dedicated to providing quality education in a safe, modern and inspiring environment.</p>
+          <div class="social-links">
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+            <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Important Links</h4>
+          <ul>
+            <li><a href="teachers.html"><i class="fas fa-chevron-right"></i> Our Teachers</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i><span>YOUR SCHOOL ADDRESS<br>City, Country</span></li>
+            <li><i class="fas fa-phone"></i><span>YOUR PHONE NUMBER</span></li>
+            <li><i class="fas fa-envelope"></i><span>YOUR EMAIL ADDRESS</span></li>
+            <li><i class="fas fa-clock"></i><span>Mon – Sat: 8:00 AM – 2:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Smart Modern Public School. All Rights Reserved.</p>
+        <p>Designed & Developed for The Smart Modern Public School</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>

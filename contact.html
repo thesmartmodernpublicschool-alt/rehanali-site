@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | The Smart Modern Public School</title>
+  <meta name="description" content="Contact The Smart Modern Public School. Find our address, phone, email and send us a message.">
+  <meta name="keywords" content="contact school, school address, phone number, The Smart Modern Public School">
+  <meta name="author" content="The Smart Modern Public School">
+  <meta property="og:title" content="Contact Us | The Smart Modern Public School">
+  <meta property="og:description" content="Get in touch with The Smart Modern Public School.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-loader"><div class="loader-spinner"></div></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="The Smart Modern Public School Logo">
+          <div class="logo-text">The Smart Modern<span>Public School</span></div>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="teachers.html">Teachers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+          <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you. Reach out anytime.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-cards reveal">
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>School Address</h4>
+              <p>YOUR SCHOOL ADDRESS<br>City, Country</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone Number</h4>
+              <p><a href="tel:YOUR_PHONE_NUMBER">YOUR PHONE NUMBER</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer">YOUR WHATSAPP NUMBER</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email Address</h4>
+              <p><a href="mailto:YOUR_EMAIL_ADDRESS">YOUR EMAIL ADDRESS</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>School Timings</h4>
+              <p>Monday – Saturday<br>8:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper reveal">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Your Name <span class="required">*</span></label>
+              <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
+              <span class="error-msg">Name is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="contactEmail" name="contactEmail" placeholder="your.email@example.com" required>
+              <span class="error-msg">Email is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g. 0300-1234567" required>
+              <span class="error-msg">Phone number is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject <span class="required">*</span></label>
+              <input type="text" id="contactSubject" name="contactSubject" placeholder="Message subject" required>
+              <span class="error-msg">Subject is required</span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="contactMessage" placeholder="Write your message here..." required></textarea>
+              <span class="error-msg">Message is required</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div id="contactSuccess" class="form-success">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps Placeholder -->
+      <div class="map-container reveal">
+        <!-- 
+          REPLACE THIS PLACEHOLDER WITH YOUR ACTUAL GOOGLE MAPS EMBED CODE.
+          Steps:
+          1. Go to Google Maps and search for your school location.
+          2. Click Share > Embed a map.
+          3. Copy the iframe code and paste it below, replacing the map-placeholder div.
+        -->
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Google Maps Location</h3>
+          <p>Replace this section with your school's Google Maps embed code.<br>
+          See the HTML comment above for instructions.</p>
+        </div>
+        <!-- Example (uncomment and replace with your embed):
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="School Location Map">
+        </iframe>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">The Smart Modern<span>Public School</span></div>
+          <p>Dedicated to providing quality education in a safe, modern and inspiring environment.</p>
+          <div class="social-links">
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+            <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Important Links</h4>
+          <ul>
+            <li><a href="teachers.html"><i class="fas fa-chevron-right"></i> Our Teachers</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i><span>YOUR SCHOOL ADDRESS<br>City, Country</span></li>
+            <li><i class="fas fa-phone"></i><span>YOUR PHONE NUMBER</span></li>
+            <li><i class="fas fa-envelope"></i><span>YOUR EMAIL ADDRESS</span></li>
+            <li><i class="fas fa-clock"></i><span>Mon – Sat: 8:00 AM – 2:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Smart Modern Public School. All Rights Reserved.</p>
+        <p>Designed & Developed for The Smart Modern Public School</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
